@@ -5,7 +5,7 @@
     "permissions": [ "tabs", "activeTab" ],
     "content_scripts": [
       {
-        "matches": [ "http*://*/*" ],
+        "matches": [ "*://*/*" ],
         "js": [ "content-script.js" ]
       }
     ],

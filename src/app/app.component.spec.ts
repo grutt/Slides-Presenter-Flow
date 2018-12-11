@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'TakeoutApp'`, () => {
+  it(`should have as title 'AngularChromeExtensionBase'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('TakeoutApp');
+    expect(app.title).toEqual('AngularChromeExtensionBase');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to TakeoutApp!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to AngularChromeExtensionBase!');
   });
 });

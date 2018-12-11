@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Test Extension",
+    "name": "AngularChromeExtensionBase",
     "version": "1.0.0",
     "permissions": [ "tabs", "activeTab" ],
     "content_scripts": [

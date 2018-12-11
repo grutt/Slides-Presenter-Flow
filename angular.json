@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TakeoutApp": {
+    "AngularChromeExtensionBase": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/TakeoutApp",
+            "outputPath": "dist/AngularChromeExtensionBase",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "TakeoutApp:build"
+            "browserTarget": "AngularChromeExtensionBase:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "TakeoutApp:build:production"
+              "browserTarget": "AngularChromeExtensionBase:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TakeoutApp:build"
+            "browserTarget": "AngularChromeExtensionBase:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "TakeoutApp-e2e": {
+    "AngularChromeExtensionBase-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "TakeoutApp:serve"
+            "devServerTarget": "AngularChromeExtensionBase:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "TakeoutApp:serve:production"
+              "devServerTarget": "AngularChromeExtensionBase:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "TakeoutApp"
+  "defaultProject": "AngularChromeExtensionBase"
 }

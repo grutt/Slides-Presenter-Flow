@@ -33,7 +33,7 @@ gulp.task('content-script', function() {
         .pipe(sourcemaps.init({loadMaps: true}))
         // .pipe(uglify()) TODO replace
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./dist/TakeoutApp/'));
+        .pipe(gulp.dest('./dist/AngularChromeExtensionBase/'));
 });
 
 gulp.task('default', gulp.series('ng-build', 'content-script'));

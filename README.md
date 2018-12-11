@@ -2,8 +2,10 @@
 
 ## Rename to a new project
 cd your project root
-sed -i 's/AngularChromeExtensionBase/newName/g' *
-sed -i 's/AngularChromeExtensionBase/AngularChromeExtensionBase/g' *
+On linux
+`sed -i 's/AngularChromeExtensionBase/newName/g' *``
+On mac
+`LC_CTYPE=C && LANG=C && find * -type f -exec sed -i "" "s/AngularChromeExtensionBase/newName/g" {} +`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 

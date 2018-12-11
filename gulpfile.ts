@@ -25,23 +25,15 @@ gulp.task('content-script', function() {
             debug: true,
             entries: 'src/content-script/boot.ts'
         })
-        .transform(babelify.configure({presets: ['es2015']}))
+        .transform(babelify.configure({presets: ['es7']}))
         .plugin(tsify)
         .bundle()
         .pipe(source('content-script.js'))
         .pipe(buffer())
         .pipe(sourcemaps.init({loadMaps: true}))
-        .pipe(uglify())
+        // .pipe(uglify()) TODO replace
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./dist/TakeoutApp/'));
 });
 
-gulp.task('default', gulp.series(
-  'ng-build',
-  'content-script',
-  function() {
-    // default task code here
-}));
-// gulp.task('default', ['ng-build'], function() {
-//     // default task code here
-// });
+gulp.task('default', gulp.series('ng-build', 'content-script'));

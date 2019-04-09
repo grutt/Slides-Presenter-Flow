@@ -3,7 +3,7 @@
 ## Rename to a new project
 cd your project root
 On linux
-`sed -i 's/AngularChromeExtensionBase/newName/g' *``
+`sed -i 's/AngularChromeExtensionBase/newName/g' *`
 On mac
 `LC_CTYPE=C && LANG=C && find * -type f -exec sed -i "" "s/AngularChromeExtensionBase/newName/g" {} +`
 
